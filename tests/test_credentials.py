@@ -10,5 +10,5 @@ def test_credentials_exist():
 
 def test_credentials_valid():
     # Ensure that the credentials are valid
-    creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+    creds = Credentials.from_authorized_user_file('../resources/token.json', SCOPES)
     assert creds.valid, 'Invalid credentials.'
