@@ -1,6 +1,8 @@
 import os.path
 from google.oauth2.credentials import Credentials
-
+# If modifying these scopes, delete the file token.json.
+SCOPES = ['https://www.googleapis.com/auth/drive']
+   
 def test_credentials_exist():
     # Ensure that the credentials file exists
    assert os.path.exists('../resources/credentials.json'), 'Credentials file not found.'
